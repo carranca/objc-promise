@@ -331,7 +331,7 @@
     }];
     
     [waitCondition lock];
-    if (!waiting) {
+    if (waiting) {
         [waitCondition waitUntilDate:[NSDate dateWithTimeIntervalSinceNow:timeout]];
     }
     [waitCondition unlock];
