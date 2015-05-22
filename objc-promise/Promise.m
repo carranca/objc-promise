@@ -268,6 +268,13 @@
     return [self on:dispatch_get_main_queue()];
 }
 
+- (Promise *)resolves:(Deferred *)deferred
+{
+    [self chainTo:deferred];
+    return deferred;
+}
+
+
 - (Promise *)timeout:(NSTimeInterval)interval
 {
     return [self timeout:interval leeway:0.0];

@@ -68,6 +68,8 @@ typedef enum {
 - (Promise *)on:(dispatch_queue_t)queue;
 - (Promise *)onMainQueue;
 
+- (Promise *)resolves:(Deferred *)deferred;
+
 - (Promise *)timeout:(NSTimeInterval)interval;
 - (Promise *)timeout:(NSTimeInterval)interval leeway:(NSTimeInterval)leeway;
 
