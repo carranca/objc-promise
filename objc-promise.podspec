@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'objc-promise'
-  s.version = '1.0'
+  s.version = '1.1'
   s.platform = :ios, '6.0'
   s.requires_arc = true
   s.license = 'MIT'
